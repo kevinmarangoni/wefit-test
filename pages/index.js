@@ -1,8 +1,7 @@
+import Home from '/pages/home/index.js'
 
-export default function Home() {
+export default function App() {
   return (
-    <div>
-
-    </div>
+    <Home />
   )
 }
