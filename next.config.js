@@ -5,7 +5,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ["www.imagemhost.com.br"],
+    domains: ["i.postimg.cc"],
   },
 }
 
