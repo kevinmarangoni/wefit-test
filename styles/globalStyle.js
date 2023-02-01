@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     
     *{
-        border: 1px dashed ${props=> props.theme.color.font.primary};
+        //border: 1px dashed ${props=> props.theme.color.font.primary};
         
         padding: 0;
         margin: 0;
@@ -19,7 +19,8 @@ export const GlobalStyle = createGlobalStyle`
     html{
         background-color: ${props=> props.theme.color.primary.main};
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+        height: fit-content;
     }
 
     body{
