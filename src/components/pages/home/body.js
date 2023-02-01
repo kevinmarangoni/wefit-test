@@ -2,14 +2,9 @@ import {useEffect, useState} from "react";
 import ItemCard from "/src/components/common/layout/cards/Item";
 import styled from "styled-components";
 
-import ApiRequests from "/src/utils/api.js"
+import Spinner from "/src/components/common/layout/Spinner";
 
-const mock = {
-  id: 1,
-  title: "Viúva Negra",
-  price: 9.99,
-  image: "https://www.imagemhost.com.br/images/2022/07/10/viuva-negra.png",
-};
+import ApiRequests from "/src/utils/api.js"
 
 const Body = () => {
   const [data, setData] = useState([])
@@ -51,7 +46,7 @@ const Body = () => {
           </>
           :
           <>
-            Carregando...
+            <Spinner />
           </>
           }
         </Content>
@@ -67,6 +62,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+height: 630px;
 display: flex;
 justify-content: center;
 align-items: center;
