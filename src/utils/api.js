@@ -3,7 +3,7 @@ const API_PATH = "http://localhost:3001/products";
 
 class ApiRequests {
 
-  async getAllItems(id, setter) {
+  async getAllItems() {
     try {
       const data = await axios.get(`${API_PATH}`);
       return data;
